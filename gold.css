@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(189, 181, 181);
+}
+body{
+    background-color: black;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    margin-top: 7px;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+#logo{
+    margin-right: 300px;
+    display: flex;
+    font-size: 20px;
+}
+#first{
+    display: flex;
+    margin-right: 10px;
+    font-size: 20px;
+    color: yellow;
+}
+
+#btn1{
+    background-color: black;
+    margin-left: 20px;
+    border: 1px solid yellow;
+    padding: 10px;
+    font-size: small;
+}
+#btn2{
+    background-color: yellow;
+    margin-left: 20px;
+    border: 1px solid yellow;
+    padding: 10px;
+    color: black;
+    font-size: small;
+}
+#btn3{
+    margin: 20px 0px 0px 100px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    background-color: grey;
+    border: 1px solid grey;
+    z-index: 5;
+    color: whitesmoke;
+}
+.main1{
+    height: 500px;
+    max-width: 325px;
+}
+.main2{
+    height: 500px;
+    width: 500px;
+    /* background-color: red; */
+}
+.main{
+    display: flex;
+    margin-left: 100px;
+    gap: 80px;
+    margin-top: 20px;
+}
+#head1{
+    font-size: 45px;
+}
+#para2{
+    font-size: small;
+    color: grey;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#btn4{
+    font-size: 10px;
+    margin-top: 30PX;
+    margin-left: 5px;
+    padding: 7px;
+    border: 1px solid rgba(255, 255, 0, 0.664);
+    background-color: rgba(255, 255, 0, 0.685);
+    color: black;
+}
+#btn5{
+    font-size: 10px;
+    margin-top: 30PX;
+    margin-left: 5px;
+    padding: 7px;
+    border: 1px solid yellow;
+    background-color: black;
+    color: rgba(255, 255, 0, 0.473);
+}
+#head3{
+    margin: 15px 17px;
+    color: rgba(255, 255, 255, 0.541);
+}
+#head4{
+    margin: 15px 0px 0px 17px;
+    color: white;
+    font-size: 50px;
+}
+#btn6{
+    margin-left: 17px;
+    text-align: center;
+    padding: 8px 14px;
+    background-color: rgba(0, 128, 0, 0.219);
+}
+sup
+{
+    
+    font-size:25px;
+    color: yellow;
+}

@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px ;
+            text-align: center;
+        }
+        .card h2 {
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .remember {
+            text-align: center;
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            align-content: center;
+        }
+        button:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <div class="remember">
+            <input type="checkbox"> Remember Me
+        </div>
+        <button>Login</button>
+    </div>
+</body>
+</html>

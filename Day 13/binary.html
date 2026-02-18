@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Decimal to Binary</title>
+<script language="JavaScript">
+var num=5;
+var prd=1,sum=0,rem;
+while(num!=0) {
+rem=num % 2;
+sum=sum + rem * prd;
+prd=prd * 10;
+num=Math.floor(num / 2);
+}
+document.write(sum);
+</script>
+</head>
+<body bgcolor="red" text="blue">
+</body>
+</html>

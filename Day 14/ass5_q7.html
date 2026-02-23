@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>QUESTION 7</title>
+<script>
+var arr = [10,66,21,19,56,21,66,10,10];
+var freq = {};
+for (var i=0;i<arr.length;i++)
+{
+var num = arr[i];
+if (freq[num])
+{
+freq[num]++;
+}
+else
+{
+freq[num] = 1;
+}
+}
+for (var key in freq) {
+document.write(key + " occurs " + freq[key] + " times<br>");
+}
+</script>
+</head>
+<body bgcolor="pink" text="blue">
+</body>
+</html>

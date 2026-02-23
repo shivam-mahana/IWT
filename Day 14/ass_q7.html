@@ -1,0 +1,27 @@
+
+<html>
+<head>
+<title>Count Occurrences</title>
+</head>
+<body>
+<script>
+var arr = [1, 2, 2, 3, 3, 3, 4];
+var counts = {};
+
+for (var i = 0; i < arr.length; i++) {
+  var num = arr[i];
+  if (counts[num]) {
+    counts[num]++;   // increment if already exists
+  } else {
+    counts[num] = 1; // initialize if first time
+  }
+}
+
+// Display results
+document.write("Array: " + arr + "<br>");
+for (var key in counts) {
+  document.write("Element " + key + " occurs " + counts[key] + " times<br>");
+}
+</script>
+</body>
+</html>

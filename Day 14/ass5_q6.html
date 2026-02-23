@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>QUESTION 6</title>
+<script>
+let arr=[10, 20, 20, 30, 40, 40, 50, 10];
+let i,j,res=[];
+for(i=0;i<arr.length;i++) {
+let found=false;
+for (=0;j<res.length;j++)
+{
+if(arr[i]==res[j])
+{
+found = true;
+break;
+}
+}
+if(!found)
+{
+res.push(arr[i]);
+}
+}
+document.write("Original Array: " + arr + "<br>");
+document.write("Array without duplicates: " + res);
+</script>
+</head>
+<body bgcolor="black" text="white">
+</body>
+</html>

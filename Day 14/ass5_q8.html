@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>QUESTION 8</title>
+</head>
+<body>
+<script>
+function isPrime(num)
+{
+  if(num< 2)
+  return false;
+  for (var i=2;i<= Math.sqrt(num); i++)
+  {
+    if(num%i==0)
+	return false;
+  }
+  return true;
+}
+var test1=7;
+var test2=10;
+document.write(test1+"<br>"+"Is the number Prime?"+isPrime(test1)+"<br>");
+document.write(test2+"<br>"+"Is the number Prime?"+isPrime(test2));
+</script>
+<body bgcolor="black" text="white"> 
+</body>
+</html>

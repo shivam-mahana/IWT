@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> QUESTION 9 </title>
+<script language="JavaScript">
+function isArmstrong(num) {
+var original = num;
+var sum = 0;
+var remainder;
+while(num > 0) {
+ remainder = num % 10;        
+sum = sum + remainder * remainder * remainder;  
+num = parseInt(num / 10);    
+}
+if(sum == original)
+return true;
+else
+return false;
+}
+var num = 153;  
+document.write("Number: " + num + "<br>");
+if(isArmstrong(num
+{
+ document.write("It is an Armstrong Number");
+} 
+else
+{
+document.write("It is Not an Armstrong Number");
+}
+</script>
+</head>
+<body bgcolor="black" text="white">
+</body>
+</html>

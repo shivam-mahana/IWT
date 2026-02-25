@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Question 12</title>
+<script>
+function fibonacci(n) {
+let a = [];
+let f0=0,f1=1;
+a.push(f0);
+if (n > 1) a.push(f1);
+for (let i = 2; i < n; i++) {
+let f2 = f0 + f1;
+a.push(f2);
+f0 = f1;
+f1 = f2;
+}
+return a;
+}
+let n = parseInt(prompt("Enter the number of terms"));
+let res =fibonacci(n);
+document.write("Fibonacci Series: " + res.join(", ") + "<br>");
+</script>
+</head>
+<body bgcolor="black" text="white">
+</body>
+</html>

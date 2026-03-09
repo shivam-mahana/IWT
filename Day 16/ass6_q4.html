@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>QUESTION 4</title>
+<script>
+function add(){
+var x=document.getElementById("t").value;
+x = parseInt(x) + 1;
+document.getElementById("t").value = x;
+}
+function sub(){
+var x=document.getElementById("t").value;
+x=parseInt(x) - 1;
+document.getElementById("t").value = x;
+}
+</script>
+</head>
+<body>
+<input type="text" id="t" value="0">
+<input type="button" value="+" onclick="add()">
+<input type="button" value="-" onclick="sub()">
+</body>
+</html>

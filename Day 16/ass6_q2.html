@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>QUESTION 2</title>
+<script>
+function toggle(){
+var p = document.getElementById("para");
+var b = document.getElementById("btn");
+if(p.style.display=="none"){
+p.style.display="block";
+b.value="Hide";
+}
+else{
+p.style.display="none";
+b.value="Show";
+}
+}
+</script>
+</head>
+<body>
+<p id="para">This is a paragraph of text.</p>
+<input type="button" id="btn" value="Hide" onclick="toggle()">
+</body>
+</html>

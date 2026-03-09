@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QUESTION 6</title>
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:25px;
+width:300px;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+}
+
+h2{
+text-align:center;
+}
+
+select,input,button{
+width:100%;
+margin:10px 0;
+padding:8px;
+}
+
+button{
+background:#2c3e50;
+color:white;
+border:none;
+cursor:pointer;
+}
+#error{
+color:red;
+font-size:14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Currency Converter</h2>
+<label>From:</label>
+<select id="from">
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="INR">INR</option>
+<option value="AUD">AUD</option>
+</select>
+<input type="number" id="amount" placeholder="Enter Amount">
+<label>To:</label>
+<select id="to">
+<option value="INR">INR</option>
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="AUD">AUD</option>
+</select>
+<input type="text" id="result" placeholder="Converted Amount" readonly>
+<button onclick="convert()">Convert</button>
+<p id="error"></p>
+</div>
+<script>
+function convert(){
+const conversionRates = {
+USD:{EUR:0.93, GBP:0.82, INR:82.74, AUD:1.47},
+EUR:{USD:1.08, GBP:0.88, INR:89.06, AUD:1.58},
+GBP:{USD:1.22, EUR:1.14, INR:101.5, AUD:1.80},
+INR:{USD:0.012, EUR:0.011, GBP:0.0098, AUD:0.018},
+AUD:{USD:0.68, EUR:0.63, GBP:0.55, INR:55.87}
+};
+let from = document.getElementById("from").value;
+let to = document.getElementById("to").value;
+let amount = document.getElementById("amount").value;
+if(amount=="" || from=="" || to==""){
+document.getElementById("error").innerText="Please fill all fields";
+return;
+}
+if(from==to){
+document.getElementById("error").innerText="From and To currency cannot be same";
+return;
+}
+document.getElementById("error").innerText="";
+let rate = conversionRates[from][to];
+let result = amount * rate;
+document.getElementById("result").value = result.toFixed(2);
+}
+</script>
+</body>
+</html>
